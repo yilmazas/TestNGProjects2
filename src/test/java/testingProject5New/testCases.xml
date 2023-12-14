@@ -1,0 +1,32 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuite" parallel="tests" thread-count="1">
+
+    <test name="chromeTest">
+        <parameter name="browserType" value="chrome"></parameter>
+        <classes>
+            <class name="testingProject5New.Project5New">
+<!--                <methods>-->
+<!--                    <include name="loginTest"/>-->
+<!--                    <exclude name="checkLeftNavMenu"/>-->
+<!--                    <include name="createCustomer"/>-->
+<!--                </methods>-->
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="edgeTest">
+        <parameter name="browserType" value="edge"></parameter>
+        <classes>
+            <class name="testingProject5New.Project5New">
+<!--                <methods>-->
+<!--                    <include name="loginTest"/>-->
+<!--                    <exclude name="checkLeftNavMenu"/>-->
+<!--                    <include name="createCustomer"/>-->
+<!--                </methods>-->
+
+            </class>
+        </classes>
+    </test>
+</suite>

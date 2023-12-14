@@ -5,7 +5,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.BaseDriverParameter;
-import utilities.MyFunction;
 
 public class Project5 extends BaseDriverParameter {
 
@@ -15,12 +14,18 @@ public class Project5 extends BaseDriverParameter {
 
     @Test(priority = 1)
     public void loginTest(){
+        driver.get("https://admin-demo.nopcommerce.com/login?");
+        elements.username.clear();
+        elements.username.sendKeys("admin@yourstore.com");
+        elements.password.clear();
+        elements.password.sendKeys("admin");
+        elements.loginButton.click();
 
         System.out.println("The login test was inserted into the BaseDriverParameter class");
         // The login test was inserted into the BaseDriverParameter class
     }
 
-    @Test
+    @Test(priority = 2)
     public void checkLeftNavMenu(){
         /* Test Case 2: Check LeftNaw Menu
 ➢ Dashboardun altındaki menülere tek tek tıklatın.

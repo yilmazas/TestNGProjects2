@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/yilma/IdeaProjects/TestNGProjects2/src/test/java/testingProject5"><classes><class name="testingProject5.Project5"><methods><include name="loginTest"/></methods></class></classes></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/yilma/IdeaProjects/TestNGProjects2/src/test/java/testingProject5New">
+        <classes>
+            <class name="testingProject5New.Project5New">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="checkLeftNavMenu"/>
+                    <include name="createCustomer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
