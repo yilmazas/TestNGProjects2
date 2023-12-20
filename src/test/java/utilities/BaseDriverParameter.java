@@ -54,6 +54,6 @@ public class BaseDriverParameter {
     @AfterClass
     public void endingOperations() {
         MyFunction.wait(5);
-        driver.quit();
+        //driver.quit();
     }
 }
